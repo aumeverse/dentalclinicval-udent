@@ -84,7 +84,7 @@
                         'draw-check': {
                             '0%': { 'stroke-dashoffset': 29 },
                             '100%': { 'stroke-dashoffset': 0 },
-                        },
+                        }
                     }
                 }
             }
@@ -379,11 +379,13 @@
 
             <!-- Hero Content -->
             <div class="relative z-10 container mx-auto px-6 text-center">
-                <h1 class="letter-reveal-main font-poppins font-bold text-5xl md:text-7xl lg:text-8xl text-shadow-lg mb-4">
+                <!-- OPTIMIZED: Changed text-5xl to text-4xl sm:text-5xl for better mobile scaling -->
+                <h1 class="letter-reveal-main font-poppins font-bold text-4xl sm:text-5xl md:text-7xl lg:text-8xl text-shadow-lg mb-4">
                     Premium Dental Care You Can Trust
                 </h1>
                 <!-- FIXED: Changed text-shadow to text-val-charcoal for visibility -->
-                <h2 class="font-poppins font-semibold text-xl md:text-2xl text-val-charcoal mb-8" data-aos="fade-up" data-aos-delay="1200">
+                <!-- OPTIMIZED: Changed text-xl to text-lg sm:text-xl for better mobile scaling -->
+                <h2 class="font-poppins font-semibold text-lg sm:text-xl md:text-2xl text-val-charcoal mb-8" data-aos="fade-up" data-aos-delay="1200">
                     Trusted by 10,000+ Patients | 14 Years of Excellence | 4.8⭐ Rated
                 </h2>
                 
@@ -405,6 +407,7 @@
                 </div>
                 
                 <!-- CTA Buttons -->
+                <!-- NOTE: This flex-col sm:flex-row is already a perfect responsive pattern. -->
                 <div class="flex flex-col sm:flex-row justify-center items-center gap-4" data-aos="fade-up" data-aos-delay="1600">
                     <a href="#booking-form" class="w-full sm:w-auto px-8 py-4 bg-val-teal text-white font-poppins font-semibold rounded-lg shadow-xl text-lg transform transition duration-300 hover:scale-105 hover:shadow-2xl hover:bg-val-teal/90">
                         Book Appointment Now
@@ -427,19 +430,22 @@
         <!-- ===== SECTION 2: Why Choose Val U Dent ===== -->
         <section id="why-choose-us" class="py-24 bg-val-gray">
             <div class="container mx-auto px-6">
-                <h2 class="text-4xl md:text-5xl font-poppins font-bold text-center text-val-charcoal mb-4" data-aos="fade-up">Why Choose <span class="text-val-teal">Val U Dent</span>?</h2>
+                <!-- OPTIMIZED: Changed text-4xl to text-3xl sm:text-4xl for better mobile scaling -->
+                <h2 class="text-3xl sm:text-4xl md:text-5xl font-poppins font-bold text-center text-val-charcoal mb-4" data-aos="fade-up">Why Choose <span class="text-val-teal">Val U Dent</span>?</h2>
                 <p class="text-lg text-gray-600 text-center max-w-3xl mx-auto mb-16" data-aos="fade-up" data-aos-delay="100">
                     We combine decades of experience with the latest technology to provide dental care that is reliable, comfortable, and truly values your smile.
                 </p>
                 
                 <!-- FIXED: Rebuilt this section to include all 4 cards -->
+                <!-- NOTE: This grid is already perfectly responsive. -->
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                     <!-- Card 1: 14 Years Experience -->
                     <div class="group relative bg-gradient-to-br from-val-teal/80 to-val-teal bg-white p-8 rounded-2xl shadow-xl overflow-hidden transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 text-white" data-aos="fade-up" data-aos-delay="100">
                         <span class="card-border-slide"></span>
                         <div class="relative z-10">
                             <div class="text-5xl mb-4 group-hover:animate-spin" style="--fa-animation-duration: 1s;"><i class="fa-solid fa-award"></i></div>
-                            <div class="font-poppins font-bold text-7xl mb-2">
+                            <!-- OPTIMIZED: Made counter slightly smaller on mobile -->
+                            <div class="font-poppins font-bold text-6xl sm:text-7xl mb-2">
                                 <span class="counter" data-target="14">0</span>+
                             </div>
                             <h3 class="font-poppins font-semibold text-xl mb-1">Years in Healthcare</h3>
@@ -452,7 +458,8 @@
                         <span class="card-border-slide"></span>
                         <div class="relative z-10">
                             <div class="text-5xl mb-4"><i class="fa-solid fa-user-doctor"></i></div>
-                            <div class="font-poppins font-bold text-7xl mb-2">
+                            <!-- OPTIMIZED: Made counter slightly smaller on mobile -->
+                            <div class="font-poppins font-bold text-6xl sm:text-7xl mb-2">
                                 <span class="counter" data-target="2">0</span>
                             </div>
                             <h3 class="font-poppins font-semibold text-xl mb-1">Expert Dentists</h3>
@@ -467,8 +474,9 @@
                             <div class="text-5xl text-val-gold mb-4">
                                 <span class="star-rating-fill">★★★★★</span>
                             </div>
-                            <div class="font-poppins font-bold text-7xl mb-2">
-                                <span class="counter-decimal" data-target="4.7">4.8</span>⭐
+                            <!-- OPTIMIZED: Made counter slightly smaller on mobile -->
+                            <div class="font-poppins font-bold text-6xl sm:text-7xl mb-2">
+                                <span class="counter-decimal" data-target="4.8">4.8</span>⭐
                             </div>
                             <h3 class="font-poppins font-semibold text-xl mb-1">Patient Rating</h3>
                             <p class="font-inter text-sm text-gray-700">Based on <span class="font-bold">147+ Verified Reviews</span>.</p>
@@ -492,11 +500,13 @@
         <!-- ===== SECTION 3: Our Services ===== -->
         <section id="services" class="py-24 bg-white">
             <div class="container mx-auto px-6">
-                <h2 class="text-4xl md:text-5xl font-poppins font-bold text-center text-val-charcoal mb-4" data-aos="fade-up">Our Comprehensive Services</h2>
+                <!-- OPTIMIZED: Changed text-4xl to text-3xl sm:text-4xl for better mobile scaling -->
+                <h2 class="text-3xl sm:text-4xl md:text-5xl font-poppins font-bold text-center text-val-charcoal mb-4" data-aos="fade-up">Our Comprehensive Services</h2>
                 <p class="text-lg text-gray-600 text-center max-w-3xl mx-auto mb-16" data-aos="fade-up" data-aos-delay="100">
                     From routine check-ups to complete smile makeovers, we provide a full spectrum of dental services.
                 </p>
                 
+                <!-- NOTE: This grid is already perfectly responsive. -->
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     <!-- Service Cards -->
                     <div class="service-card group relative p-8 bg-val-gray rounded-2xl shadow-lg transition-all duration-300 hover:shadow-2xl hover:scale-105 overflow-hidden" data-aos="fade-up" data-aos-delay="100">
@@ -583,15 +593,18 @@
         <!-- ===== SECTION 4: Meet Our Expert Dentists ===== -->
         <section id="doctors" class="py-24 bg-val-gray">
             <div class="container mx-auto px-6">
-                <h2 class="text-4xl md:text-5xl font-poppins font-bold text-center text-val-charcoal mb-4" data-aos="fade-up">Meet Our Dental Experts</h2>
+                <!-- OPTIMIZED: Changed text-4xl to text-3xl sm:text-4xl for better mobile scaling -->
+                <h2 class="text-3xl sm:text-4xl md:text-5xl font-poppins font-bold text-center text-val-charcoal mb-4" data-aos="fade-up">Meet Our Dental Experts</h2>
                 <p class="text-lg text-gray-600 text-center max-w-3xl mx-auto mb-16" data-aos="fade-up" data-aos-delay="100">
                     Our 2 expert doctors are dedicated to providing personalized care with over 10 years of experience each.
                 </p>
                 
+                <!-- NOTE: This grid is already perfectly responsive. -->
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-4xl mx-auto">
                     <!-- Doctor 1 Card -->
                     <div class="bg-white rounded-2xl shadow-xl p-8 text-center transition-all duration-300 hover:shadow-2xl hover:-translate-y-2" data-aos="fade-right" data-aos-delay="200">
-                        <div class="relative w-48 h-48 mx-auto mb-6">
+                        <!-- OPTIMIZED: Made image smaller on mobile (w-40 h-40) and scale up on sm: -->
+                        <div class="relative w-40 h-40 sm:w-48 sm:h-48 mx-auto mb-6">
                             <img src="https://placehold.co/280x280/E0F2F1/1E3A8A?text=%20" alt="Dr. R. Mehta" class="w-full h-full rounded-full object-cover border-4 border-val-teal shadow-lg">
                             <div class="absolute inset-0 rounded-full border-4 border-val-teal transition-all duration-300 transform scale-100 group-hover:scale-110 group-hover:border-val-gold"></div>
                         </div>
@@ -606,7 +619,8 @@
                     
                     <!-- Doctor 2 Card -->
                     <div class="bg-white rounded-2xl shadow-xl p-8 text-center transition-all duration-300 hover:shadow-2xl hover:-translate-y-2" data-aos="fade-left" data-aos-delay="300">
-                        <div class="relative w-48 h-48 mx-auto mb-6">
+                        <!-- OPTIMIZED: Made image smaller on mobile (w-40 h-40) and scale up on sm: -->
+                        <div class="relative w-40 h-40 sm:w-48 sm:h-48 mx-auto mb-6">
                             <img src="https://placehold.co/280x280/E0F2F1/1E3A8A?text=%20" alt="Dr. S. Sharma" class="w-full h-full rounded-full object-cover border-4 border-val-teal shadow-lg">
                         </div>
                         <h3 class="font-poppins font-bold text-2xl text-val-teal">Dr. Somali K. Contarkar</h3>
@@ -624,12 +638,14 @@
         <!-- ===== SECTION 5: Patient Testimonials ===== -->
         <section id="reviews" class="py-24 bg-white">
             <div class="container mx-auto px-6">
-                <h2 class="text-4xl md:text-5xl font-poppins font-bold text-center text-val-charcoal mb-4" data-aos="fade-up">What Our Patients Say</h2>
+                <!-- OPTIMIZED: Changed text-4xl to text-3xl sm:text-4xl for better mobile scaling -->
+                <h2 class="text-3xl sm:text-4xl md:text-5xl font-poppins font-bold text-center text-val-charcoal mb-4" data-aos="fade-up">What Our Patients Say</h2>
                 <p class="text-lg text-gray-600 text-center max-w-3xl mx-auto mb-16" data-aos="fade-up" data-aos-delay="100">
                     Our 4.8-star rating comes from real patients who trust us with their smiles.
                 </p>
                 
                 <!-- Swiper Carousel -->
+                <!-- NOTE: The Swiper JS config is already responsive (1 slide on mobile). -->
                 <div class="swiper testimonial-swiper" data-aos="fade-up" data-aos-delay="200">
                     <div class="swiper-wrapper pb-16">
                         <!-- Slide 1 -->
@@ -757,11 +773,13 @@
         <!-- ===== SECTION 6: Before & After Gallery ===== -->
         <section id="gallery" class="py-24 bg-val-gray">
             <div class="container mx-auto px-6">
-                <h2 class="text-4xl md:text-5xl font-poppins font-bold text-center text-val-charcoal mb-4" data-aos="fade-up">Our Smile Transformations</h2>
+                <!-- OPTIMIZED: Changed text-4xl to text-3xl sm:text-4xl for better mobile scaling -->
+                <h2 class="text-3xl sm:text-4xl md:text-5xl font-poppins font-bold text-center text-val-charcoal mb-4" data-aos="fade-up">Our Smile Transformations</h2>
                 <p class="text-lg text-gray-600 text-center max-w-3xl mx-auto mb-16" data-aos="fade-up" data-aos-delay="100">
                     See the real, life-changing results we've achieved for our patients.
                 </p>
                 
+                <!-- NOTE: This grid is already perfectly responsive. -->
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     <!-- Gallery Item 1 -->
                     <div class="ba-slider-container" data-aos="fade-up" data-aos-delay="150">
@@ -812,11 +830,13 @@
         <section id="booking-form" class="py-24 bg-gradient-to-b from-white to-val-teal/10">
             <div class="container mx-auto px-6">
                 <div class="max-w-3xl mx-auto">
-                    <h2 class="text-4xl md:text-5xl font-poppins font-bold text-center text-val-charcoal mb-4" data-aos="fade-up">Book Your Appointment</h2>
+                    <!-- OPTIMIZED: Changed text-4xl to text-3xl sm:text-4xl for better mobile scaling -->
+                    <h2 class="text-3xl sm:text-4xl md:text-5xl font-poppins font-bold text-center text-val-charcoal mb-4" data-aos="fade-up">Book Your Appointment</h2>
                     <p class="text-lg text-gray-600 text-center max-w-3xl mx-auto mb-12" data-aos="fade-up" data-aos-delay="100">
                         Fill out the form below, and we'll confirm your booking via <span class="font-bold text-green-600">WhatsApp</span>.
                     </p>
                     
+                    <!-- NOTE: This form is already perfectly responsive with its grid. -->
                     <form id="appointmentForm" class="bg-white p-8 md:p-12 rounded-2xl shadow-2xl border-l-8 border-val-teal" data-aos="fade-up" data-aos-delay="200" novalidate>
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                             <!-- Name -->
@@ -910,8 +930,10 @@
         <!-- ===== SECTION 8: Contact & Location ===== -->
         <section id="contact" class="py-24 bg-white">
             <div class="container mx-auto px-6">
-                <h2 class="text-4xl md:text-5xl font-poppins font-bold text-center text-val-charcoal mb-16" data-aos="fade-up">Visit Us in Kandivali West</h2>
+                <!-- OPTIMIZED: Changed text-4xl to text-3xl sm:text-4xl for better mobile scaling -->
+                <h2 class="text-3xl sm:text-4xl md:text-5xl font-poppins font-bold text-center text-val-charcoal mb-16" data-aos="fade-up">Visit Us in Kandivali West</h2>
                 
+                <!-- NOTE: This grid is already perfectly responsive. -->
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
                     <!-- Map -->
                     <div data-aos="fade-right" data-aos-delay="100">
@@ -1022,6 +1044,7 @@
     <!-- ===== FOOTER ===== -->
     <footer class="bg-val-navy text-white pt-20 pb-8">
         <div class="container mx-auto px-6">
+            <!-- NOTE: This grid is already perfectly responsive. -->
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
                 <!-- Column 1: About -->
                 <div>
@@ -1082,6 +1105,7 @@
             
             <hr class="border-gray-700">
             
+            <!-- NOTE: This is also perfectly responsive. -->
             <div class="text-center font-inter text-gray-400 text-sm pt-8">
                 © <span id="copyright-year">2025</span> Val U Dent Dental Clinic. All rights reserved.
                 <br class="sm:hidden">
@@ -1506,6 +1530,4 @@
 
 </body>
 </html>
-
-
 
